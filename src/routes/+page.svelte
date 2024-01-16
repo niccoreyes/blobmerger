@@ -1,9 +1,9 @@
 <script lang="ts">
   import { enhance } from '$app/forms';
   import { error } from '@sveltejs/kit';
-  import PDFMerger from 'pdf-merger-js';
+  import PDFMerger from 'pdf-merger-js/browser';
 
-  export let form
+  let form: any
 
   let file_1: File | null = null
   let file_2: File | null = null
